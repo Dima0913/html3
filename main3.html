@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #acacac;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #acacac;
+            color: #acacac;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .user-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #acacac;
+        }
+
+        .main-content {
+            display: flex;
+            flex: 1;
+        }
+
+        .menu {
+            width: 100%;
+            max-width: 250px;
+            background-color: #acacac;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .email-list {
+            flex: 1;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        @media (min-width: 600px) {
+            .main-content {
+                flex-direction: row;
+            }
+
+            .menu {
+                width: 20%;
+            }
+
+            .email-list {
+                width: 80%;
+            }
+        }
+
+        span {
+            color: black;
+        }
+
+        div {
+            color: black;
+
+        }
+
+        .main {
+            padding-top: 15%;
+
+        }
+
+        .main2 {
+            padding-top: 2%;
+        }
+    </style>
+    <title>Email Page</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"></div>
+        <div class="user-info">
+            <span><b>MY MAIL</b></span>
+            <img src="img/free-icon-font-envelope-3916841.png" alt="User Avatar"
+                style="width: 30px; height: 30px; border-radius: 15%;">
+            user@mymail.com
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="menu">
+            <ul>
+                <li class="main"><strong>Incoming</strong></li>
+                <li class="main">Outgoing</li>
+                <li class="main">Drafts</li>
+                <li class="main">Spam</li>
+
+            </ul>
+        </div>
+
+        <div class="email-list">
+            <ul>
+                <li class="main2">From: John Doe, Subject: Hello</li>
+                <li class="main2">From: Jane Smith Subject: Meeting Tomorrow</li>
+                <li class="main2">From: Jane Smith Subject: Meeting Tomorrow</li>
+                <li class="main2">From: Jane Smith Subject: Meeting Tomorrow</li>
+                <li class="main2">From: Jane Smith Subject: Meeting Tomorrow</li>
+                <li class="main2">From: Jane Smith Subject: Meeting Tomorrow</li>
+                <li class="main2">From: Jane Smith Subject: Meeting Tomorrow</li>
+                <li class="main2">From: Jane Smith Subject: Meeting Tomorrow</li>
+
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

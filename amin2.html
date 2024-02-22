@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .article {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-section {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+
+        .image-container {
+            width: 100%;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .caption {
+            font-style: italic;
+            color: #777;
+        }
+
+        @media (min-width: 600px) {
+            .article {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .article .text {
+                flex: 1;
+                margin-right: 20px;
+            }
+
+            .image-section {
+                flex: 1;
+            }
+        }
+    </style>
+    <title>Стаття з зображеннями</title>
+</head>
+
+<body>
+
+    <div class="article">
+        <div class="text">
+            <h1>Cats</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio repellendus laborum, in suscipit
+                doloribus commodi rem quisquam, dolorum laudantium ut rerum! Earum, unde molestias? Reprehenderit ex
+                animi porro quis beatae dolores accusamus. Quae iusto dignissimos impedit vero? Nihil, commodi nemo? Rem
+                pariatur adipisci saepe veritatis nam exercitationem quaerat natus aliquam. Eius beatae dolor et
+                adipisci ab accusantium non, numquam consequuntur illum optio explicabo exercitationem, quisquam eaque?
+                Ab temporibus cum, laboriosam dolor dolorum voluptatum cupiditate. Sit delectus sint voluptatibus non
+                blanditiis ad est modi temporibus excepturi et fugiat ea libero fuga tempora qui fugit dignissimos
+                sapiente voluptatum atque, accusamus rem cumque. Fugit numquam ab quos neque porro, sint nisi eveniet
+                illum error, alias possimus soluta et. Suscipit, illo deserunt corrupti dolores perferendis, laudantium
+                dolorem expedita ipsa, molestiae excepturi sequi cumque sit velit maxime iusto! Doloremque ipsam
+                mollitia aliquid rem dignissimos velit autem odit reprehenderit sint fugit. Commodi aliquam sapiente
+                iure harum?</p>
+        </div>
+        <div class="image-section">
+            <div class="image-container">
+                <img src="img/Cats_White_background_Kittens_569316_600x400.jpg" alt="Зображення 1">
+                <p class="caption">White cat</p>
+            </div>
+            <div class="image-container">
+                <img src="img/Kittens_Cute_Two_Box_Heart_617939_600x400.jpg" alt="Зображення 2">
+                <p class="caption">2 Cats in box</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
